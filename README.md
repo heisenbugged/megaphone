@@ -20,31 +20,39 @@ Or install it yourself as:
 
 Once installed, add the following line to the model you want to receives messages
 
+```ruby
     include Megaphone::Notifiable
+```
 
 Example:
 
+```ruby
     class User
       include Megaphone::Notifiable
 
       # your code here
     end
+```
 
 and then, User has many messages, use it like any other has_many relationship
 
+```ruby
     User.last.messages.first
     # => nil
     User.last.messages.create! title: 'A Title', text: 'A text'
     # => true
     User.last.messages.first
     # => #<Megaphone::Message>
+```
 
 Also, some basic helper methods were added to the model
 
+```ruby
     User.last.has_unread_messages?
     # => true
     User.last.unread_messages_count
     # => 4
+```
 
 ## Contributing
 
