@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = Megaphone::VERSION
   gem.authors       = ['ApuX']
   gem.email         = []
-  gem.description   = %q{Dynamic notification system for rails 3. It allows to assign the ability to receive messages to any model. Messages includes title, text and link.}
+  gem.description   = %q{Dynamic notification system for rails 3. It allows to assign the ability to receive messages to any model. Message includes title, text and link.}
   gem.summary       = %q{Dynamic notification system for rails 3.}
   gem.homepage      = ""
 
