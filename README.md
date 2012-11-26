@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-Once installed, add the following line to the model you want to receives messages
+Now, you have to generate the files megaphone needs to work
+
+   $ rails generate megaphone:install
+
+After that, you justa have to add the following line to the model you want to receives messages
 
 ```ruby
     include Megaphone::Notifiable
@@ -34,7 +38,7 @@ Example:
     end
 ```
 
-and then, User has many messages, use it like any other has_many relationship
+And then, User has many messages, use it like any other has_many relationship. Example:
 
 ```ruby
     User.last.messages.first
@@ -45,7 +49,7 @@ and then, User has many messages, use it like any other has_many relationship
     # => #<Megaphone::Message>
 ```
 
-Also, some basic helper methods were added to the model
+Also, some basic helper methods were added to the User model
 
 ```ruby
     User.last.has_unread_messages?
