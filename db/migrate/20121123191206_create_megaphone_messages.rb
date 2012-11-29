@@ -10,6 +10,6 @@ class CreateMegaphoneMessages < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :megaphone_messages, :category_id
+    add_index :megaphone_messages, [:category_id, :category_type]
   end
 end
