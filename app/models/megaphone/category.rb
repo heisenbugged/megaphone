@@ -1,8 +1,4 @@
 class Megaphone::Category < ActiveRecord::Base
-  def self.table_name_prefix
-    'megaphone_'
-  end
-
   # == Accessible ==
   attr_accessible :name
 
