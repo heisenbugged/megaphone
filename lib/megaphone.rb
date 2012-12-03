@@ -1,4 +1,5 @@
 require "megaphone/version"
-require "megaphone/engine"
-require "megaphone/notifiable"
 require "megaphone/table_prefix"
+require "megaphone/models/megaphone/category"
+require "megaphone/models/megaphone/message"
+require "megaphone/notifiable"
